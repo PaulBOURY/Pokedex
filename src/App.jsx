@@ -3,6 +3,7 @@ import MyTitle from './MyTitle'
 import PokemonCard from './components/PokemonCard'
 import NavBar from './components/NavBar'
 import { useState } from 'react'
+import { useEffect } from 'react'
 
 // handleClickPlus={() =>  setPokemonIndex(pokemonIndex + 1)} handleClickMoins={() => setPokemonIndex(pokemonIndex - 1)}
 
@@ -36,6 +37,19 @@ const pokemonList = [
 
 function App() {
   const [pokemonIndex, setPokemonIndex] = useState(0);
+  {pokemonIndex === 3 && alert("pika pikachu !!!")}
+
+  useEffect(
+
+    () =>  {
+ 
+      alert("hello pokemon trainer :)") // ton code à exécuter
+ 
+    }, 
+ 
+    []
+ 
+ );
 
   
  
