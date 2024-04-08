@@ -37,7 +37,7 @@ const pokemonList = [
 
 function App() {
   const [pokemonIndex, setPokemonIndex] = useState(0);
-  {pokemonIndex === 3 && alert("pika pikachu !!!")}
+  
 
   useEffect(
 
